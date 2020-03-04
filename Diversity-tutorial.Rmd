@@ -1,0 +1,77 @@
+---
+title: "Diversity "
+
+```{r parameter, warning=FALSE}
+# Data reading
+metadata = read.table("metadata.tsv", header=T, row.names=1, sep="\t", comment.char="", stringsAsFactors = F)
+head(metadata, n = 3)
+group = "Group"
+width = 89
+height = 59
+
+```
+
+# Alpha diversity
+
+```{r alpha_boxplot, fig.show='asis', fig.width=4, fig.height=2.5}
+
+alpha_div = read.table("alpha/alpha.txt", header=T, row.names=1, sep="\t", comment.char="")
+head(alpha_div, n = 3)
+library(Hmisc)
+colnames(alpha_div) = capitalize(colnames(alpha_div))
+colnames(alpha_div)
+
+(p = alpha_boxplot(alpha_div, index = alpha_index, metadata, groupID = group))
+
+ggsave(paste0("alpha/alpha_boxplot_",alpha_index,".pdf"), p, width = width, height = height, units = "mm")
+
+```
+
+##  Rarefaction curve and standard error
+
+```{r alpha_rare, fig.show='asis', fig.width=4, fig.height=2.5}
+alpha_rare = read.table("alpha/alpha_rare.txt", header=T, row.names=1, sep="\t", comment.char="")
+alpha_rare[1:3, 1:3]
+
+(p = alpha_rare_curve(alpha_rare, metadata, groupID = group))
+
+ggsave("alpha/alpha_rarefaction_curve.pdf", p, width = width, height = height, units = "mm")
+
+```
+
+
+# Beta diversity 
+
+principal coordinate analysis (PCoA)
+
+```{r beta_pcoa, fig.show='asis', fig.width=4, fig.height=2.5}
+distance_type = "bray_curtis"
+distance_mat = read.table(paste0("beta/",distance_type,".txt"), header=T, row.names=1, sep="\t", comment.char="")
+distance_mat[1:3, 1:3]
+(p = beta_pcoa(distance_mat, metadata, groupID = group))
+ggsave(paste0("beta/pcoa_",distance_type,".pdf"), p, width = width, height = height, units = "mm")
+
+beta_pcoa_stat(distance_mat, metadata, groupID = group)
+```
+
+Constrained PCoA
+
+```{r beta_cpcoa, fig.show='asis', fig.width=4, fig.height=2.5}
+(p = beta_cpcoa_dis(distance_mat, metadata, groupID = group))
+ggsave(paste0("beta/cpcoa_",distance_type,".pdf"), p, width = width, height = height, units = "mm")
+```
+
+# Taxonomy stackplot
+
+Samples and groups
+```{r taxonomy, fig.show='asis', fig.width=4, fig.height=2.5}
+tax_level = "p"
+tax_phylum = read.table(paste0("tax/sum_", tax_level, ".txt"), header=T, row.names=1, sep="\t", comment.char="")
+tax_phylum[1:3, 1:3]
+
+(p = tax_stackplot(tax_phylum, metadata, topN = 8, groupID = group, style = "sample", sorted = "abundance"))
+ggsave(paste0("tax/", tax_level,"_sample.pdf"), p, width = width, height = height, units = "mm")
+
+(p = tax_stackplot(tax_phylum, metadata, topN = 8, groupID = group, style = "group", sorted = "abundance"))
+ggsave(paste0("tax/", tax_level,"_group.pdf"), p, width = width, height = height, units = "mm")
+```
