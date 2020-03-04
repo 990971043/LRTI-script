@@ -1,0 +1,24 @@
+
+Number of samples in each treatment group:
+
+ ASP NASP 
+   4    7 
+
+Relative Abundance with trait (mean):
+      ASP      NASP 
+0.1399370 0.1582571 
+
+Relative Abundance with trait (median):
+       ASP       NASP 
+0.15584073 0.04485126 
+
+Standard deviation:
+       ASP       NASP 
+0.07519526 0.18257189 
+
+Mann-Whitney-Wilcoxon Test was performed.
+p-values is:
+0.5272727 
+
+FDR-corrected p-value is:
+0.5272727 
