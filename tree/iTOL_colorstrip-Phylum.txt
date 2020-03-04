@@ -1,0 +1,86 @@
+DATASET_COLORSTRIP
+SEPARATOR TAB
+BORDER_WIDTH	0
+COLOR	#bebada
+DATASET_LABEL	Phylum
+LEGEND_COLORS	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99
+LEGEND_LABELS	Actinobacteria	Bacteroidetes	Firmicutes	Fusobacteria	Proteobacteria
+LEGEND_SHAPES	1	1	1	1	1
+LEGEND_TITLE	Phylum
+MARGIN	5
+STRIP_WIDTH	25
+DATA
+ASV_1	#b2df8a	Firmicutes
+ASV_2	#b2df8a	Firmicutes
+ASV_3	#fb9a99	Proteobacteria
+ASV_4	#fb9a99	Proteobacteria
+ASV_5	#fb9a99	Proteobacteria
+ASV_8	#fb9a99	Proteobacteria
+ASV_10	#b2df8a	Firmicutes
+ASV_7	#1f78b4	Bacteroidetes
+ASV_6	#fb9a99	Proteobacteria
+ASV_9	#fb9a99	Proteobacteria
+ASV_11	#1f78b4	Bacteroidetes
+ASV_12	#1f78b4	Bacteroidetes
+ASV_13	#b2df8a	Firmicutes
+ASV_15	#b2df8a	Firmicutes
+ASV_14	#1f78b4	Bacteroidetes
+ASV_16	#1f78b4	Bacteroidetes
+ASV_17	#b2df8a	Firmicutes
+ASV_19	#b2df8a	Firmicutes
+ASV_18	#b2df8a	Firmicutes
+ASV_21	#1f78b4	Bacteroidetes
+ASV_20	#b2df8a	Firmicutes
+ASV_22	#fb9a99	Proteobacteria
+ASV_23	#33a02c	Fusobacteria
+ASV_24	#1f78b4	Bacteroidetes
+ASV_26	#b2df8a	Firmicutes
+ASV_25	#fb9a99	Proteobacteria
+ASV_27	#1f78b4	Bacteroidetes
+ASV_28	#fb9a99	Proteobacteria
+ASV_29	#33a02c	Fusobacteria
+ASV_30	#fb9a99	Proteobacteria
+ASV_32	#a6cee3	Actinobacteria
+ASV_36	#b2df8a	Firmicutes
+ASV_923	#b2df8a	Firmicutes
+ASV_33	#b2df8a	Firmicutes
+ASV_34	#a6cee3	Actinobacteria
+ASV_35	#b2df8a	Firmicutes
+ASV_38	#b2df8a	Firmicutes
+ASV_934	#b2df8a	Firmicutes
+ASV_37	#b2df8a	Firmicutes
+ASV_39	#fb9a99	Proteobacteria
+ASV_43	#1f78b4	Bacteroidetes
+ASV_40	#fb9a99	Proteobacteria
+ASV_42	#fb9a99	Proteobacteria
+ASV_50	#1f78b4	Bacteroidetes
+ASV_41	#1f78b4	Bacteroidetes
+ASV_44	#b2df8a	Firmicutes
+ASV_46	#fb9a99	Proteobacteria
+ASV_49	#1f78b4	Bacteroidetes
+ASV_48	#b2df8a	Firmicutes
+ASV_47	#b2df8a	Firmicutes
+ASV_879	#b2df8a	Firmicutes
+ASV_53	#fb9a99	Proteobacteria
+ASV_51	#1f78b4	Bacteroidetes
+ASV_54	#33a02c	Fusobacteria
+ASV_52	#b2df8a	Firmicutes
+ASV_59	#1f78b4	Bacteroidetes
+ASV_57	#1f78b4	Bacteroidetes
+ASV_58	#b2df8a	Firmicutes
+ASV_61	#fb9a99	Proteobacteria
+ASV_744	#fb9a99	Proteobacteria
+ASV_63	#1f78b4	Bacteroidetes
+ASV_67	#fb9a99	Proteobacteria
+ASV_71	#1f78b4	Bacteroidetes
+ASV_70	#33a02c	Fusobacteria
+ASV_62	#fb9a99	Proteobacteria
+ASV_69	#33a02c	Fusobacteria
+ASV_65	#fb9a99	Proteobacteria
+ASV_68	#fb9a99	Proteobacteria
+ASV_74	#33a02c	Fusobacteria
+ASV_77	#b2df8a	Firmicutes
+ASV_93	#1f78b4	Bacteroidetes
+ASV_82	#1f78b4	Bacteroidetes
+ASV_80	#b2df8a	Firmicutes
+ASV_81	#b2df8a	Firmicutes

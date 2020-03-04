@@ -1,0 +1,86 @@
+DATASET_COLORSTRIP
+SEPARATOR TAB
+BORDER_WIDTH	0
+COLOR	#bebada
+DATASET_LABEL	Class
+LEGEND_COLORS	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#e31a1c	#fdbf6f	#ff7f00	#cab2d6	#6a3d9a
+LEGEND_LABELS	Actinobacteria	Bacilli	Bacteroidia	Betaproteobacteria	Clostridia	Epsilonproteobacteria	Flavobacteriia	Fusobacteriia	Gammaproteobacteria	Negativicutes
+LEGEND_SHAPES	1	1	1	1	1	1	1	1	1	1
+LEGEND_TITLE	Class
+MARGIN	5
+STRIP_WIDTH	25
+DATA
+ASV_1	#1f78b4	Bacilli
+ASV_2	#1f78b4	Bacilli
+ASV_3	#cab2d6	Gammaproteobacteria
+ASV_4	#33a02c	Betaproteobacteria
+ASV_5	#cab2d6	Gammaproteobacteria
+ASV_8	#cab2d6	Gammaproteobacteria
+ASV_10	#1f78b4	Bacilli
+ASV_7	#b2df8a	Bacteroidia
+ASV_6	#cab2d6	Gammaproteobacteria
+ASV_9	#33a02c	Betaproteobacteria
+ASV_11	#b2df8a	Bacteroidia
+ASV_12	#b2df8a	Bacteroidia
+ASV_13	#1f78b4	Bacilli
+ASV_15	#1f78b4	Bacilli
+ASV_14	#b2df8a	Bacteroidia
+ASV_16	#b2df8a	Bacteroidia
+ASV_17	#1f78b4	Bacilli
+ASV_19	#1f78b4	Bacilli
+ASV_18	#1f78b4	Bacilli
+ASV_21	#b2df8a	Bacteroidia
+ASV_20	#1f78b4	Bacilli
+ASV_22	#cab2d6	Gammaproteobacteria
+ASV_23	#ff7f00	Fusobacteriia
+ASV_24	#fdbf6f	Flavobacteriia
+ASV_26	#1f78b4	Bacilli
+ASV_25	#cab2d6	Gammaproteobacteria
+ASV_27	#b2df8a	Bacteroidia
+ASV_28	#cab2d6	Gammaproteobacteria
+ASV_29	#ff7f00	Fusobacteriia
+ASV_30	#cab2d6	Gammaproteobacteria
+ASV_32	#a6cee3	Actinobacteria
+ASV_36	#1f78b4	Bacilli
+ASV_923	#1f78b4	Bacilli
+ASV_33	#fb9a99	Clostridia
+ASV_34	#a6cee3	Actinobacteria
+ASV_35	#6a3d9a	Negativicutes
+ASV_38	#fb9a99	Clostridia
+ASV_934	#1f78b4	Bacilli
+ASV_37	#1f78b4	Bacilli
+ASV_39	#cab2d6	Gammaproteobacteria
+ASV_43	#b2df8a	Bacteroidia
+ASV_40	#cab2d6	Gammaproteobacteria
+ASV_42	#cab2d6	Gammaproteobacteria
+ASV_50	#fdbf6f	Flavobacteriia
+ASV_41	#b2df8a	Bacteroidia
+ASV_44	#6a3d9a	Negativicutes
+ASV_46	#cab2d6	Gammaproteobacteria
+ASV_49	#b2df8a	Bacteroidia
+ASV_48	#6a3d9a	Negativicutes
+ASV_47	#fb9a99	Clostridia
+ASV_879	#1f78b4	Bacilli
+ASV_53	#33a02c	Betaproteobacteria
+ASV_51	#fdbf6f	Flavobacteriia
+ASV_54	#ff7f00	Fusobacteriia
+ASV_52	#6a3d9a	Negativicutes
+ASV_59	#b2df8a	Bacteroidia
+ASV_57	#b2df8a	Bacteroidia
+ASV_58	#1f78b4	Bacilli
+ASV_61	#cab2d6	Gammaproteobacteria
+ASV_744	#cab2d6	Gammaproteobacteria
+ASV_63	#fdbf6f	Flavobacteriia
+ASV_67	#cab2d6	Gammaproteobacteria
+ASV_71	#b2df8a	Bacteroidia
+ASV_70	#ff7f00	Fusobacteriia
+ASV_62	#cab2d6	Gammaproteobacteria
+ASV_69	#ff7f00	Fusobacteriia
+ASV_65	#cab2d6	Gammaproteobacteria
+ASV_68	#e31a1c	Epsilonproteobacteria
+ASV_74	#ff7f00	Fusobacteriia
+ASV_77	#1f78b4	Bacilli
+ASV_93	#b2df8a	Bacteroidia
+ASV_82	#b2df8a	Bacteroidia
+ASV_80	#6a3d9a	Negativicutes
+ASV_81	#fb9a99	Clostridia

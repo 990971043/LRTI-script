@@ -1,0 +1,90 @@
+DATASET_DOMAINS
+SEPARATOR TAB
+BACKBONE_COLOR	#FFFFFF
+BACKBONE_HEIGHT	0
+BORDER_WIDTH	0
+COLOR	#bebada
+DATASET_LABEL	Species
+HEIGHT_FACTOR	1
+LEGEND_COLORS	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#e31a1c	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#e31a1c	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#e31a1c	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#e31a1c	#a6cee3	#1f78b4	#b2df8a
+LEGEND_LABELS	Acinetobacter_baumannii	Arthrobacter_sp._KFC-41	Bacillus_megaterium	Bacillus_thuringiensis	bacterium_BM0331	Capnocytophaga_sp._CM59	Dolosigranulum_pigrum_ATCC_51524	Enterococcus_faecalis	Helicobacter_pylori	Klebsiella_pneumoniae	Lactococcus_lactis	Lactococcus_piscium	Megasphaera_micronuciformis	Morganella_morganii_subsp._sibonii	Oceanobacillus_profundus	Prevotella_melaninogenica	Prevotella_multiformis	Pseudomonas_sp._BAB-3148	Pseudomonas_sp._PGO24	Pseudomonas_sp._PKG89	Pseudomonas_syringae	Serratia_marcescens_W2.3	Stenotrophomonas_maltophilia	Streptococcus_sp._2011_Oral_MS_H4	Streptococcus_sp._oral_taxon_G63	Unassigned	Veillonella_atypica
+LEGEND_SHAPES	EL	EL	EL	EL	EL	EL	RE	RE	RE	RE	RE	RE	TL	TL	TL	TL	TL	TL	TR	TR	TR	TR	TR	TR	DI	DI	DI
+LEGEND_TITLE	Species
+MARGIN	5
+SHOW_DOMAIN_LABELS	0
+WIDTH	25
+DATA
+ASV_1	10	EL|0|10|#33a02c|Bacillus_thuringiensis
+ASV_2	10	RE|0|10|#e31a1c|Lactococcus_piscium
+ASV_3	10	DI|0|10|#1f78b4|Unassigned
+ASV_4	10	DI|0|10|#1f78b4|Unassigned
+ASV_5	10	RE|0|10|#33a02c|Klebsiella_pneumoniae
+ASV_8	10	DI|0|10|#1f78b4|Unassigned
+ASV_10	10	DI|0|10|#1f78b4|Unassigned
+ASV_7	10	DI|0|10|#1f78b4|Unassigned
+ASV_6	10	EL|0|10|#a6cee3|Acinetobacter_baumannii
+ASV_9	10	DI|0|10|#1f78b4|Unassigned
+ASV_11	10	DI|0|10|#1f78b4|Unassigned
+ASV_12	10	DI|0|10|#1f78b4|Unassigned
+ASV_13	10	EL|0|10|#b2df8a|Bacillus_megaterium
+ASV_15	10	DI|0|10|#1f78b4|Unassigned
+ASV_14	10	TL|0|10|#33a02c|Prevotella_melaninogenica
+ASV_16	10	DI|0|10|#1f78b4|Unassigned
+ASV_17	10	RE|0|10|#fb9a99|Lactococcus_lactis
+ASV_19	10	TL|0|10|#b2df8a|Oceanobacillus_profundus
+ASV_18	10	DI|0|10|#1f78b4|Unassigned
+ASV_21	10	DI|0|10|#1f78b4|Unassigned
+ASV_20	10	DI|0|10|#1f78b4|Unassigned
+ASV_22	10	DI|0|10|#1f78b4|Unassigned
+ASV_23	10	DI|0|10|#1f78b4|Unassigned
+ASV_24	10	DI|0|10|#1f78b4|Unassigned
+ASV_26	10	DI|0|10|#a6cee3|Streptococcus_sp._oral_taxon_G63
+ASV_25	10	TR|0|10|#a6cee3|Pseudomonas_sp._PGO24
+ASV_27	10	DI|0|10|#1f78b4|Unassigned
+ASV_28	10	DI|0|10|#1f78b4|Unassigned
+ASV_29	10	DI|0|10|#1f78b4|Unassigned
+ASV_30	10	DI|0|10|#1f78b4|Unassigned
+ASV_32	10	EL|0|10|#1f78b4|Arthrobacter_sp._KFC-41
+ASV_36	10	RE|0|10|#1f78b4|Enterococcus_faecalis
+ASV_923	10	DI|0|10|#1f78b4|Unassigned
+ASV_33	10	DI|0|10|#1f78b4|Unassigned
+ASV_34	10	DI|0|10|#1f78b4|Unassigned
+ASV_35	10	TL|0|10|#a6cee3|Megasphaera_micronuciformis
+ASV_38	10	DI|0|10|#1f78b4|Unassigned
+ASV_934	10	DI|0|10|#1f78b4|Unassigned
+ASV_37	10	DI|0|10|#1f78b4|Unassigned
+ASV_39	10	EL|0|10|#fb9a99|bacterium_BM0331
+ASV_43	10	TL|0|10|#fb9a99|Prevotella_multiformis
+ASV_40	10	TR|0|10|#1f78b4|Pseudomonas_sp._PKG89
+ASV_42	10	TR|0|10|#b2df8a|Pseudomonas_syringae
+ASV_50	10	EL|0|10|#e31a1c|Capnocytophaga_sp._CM59
+ASV_41	10	DI|0|10|#1f78b4|Unassigned
+ASV_44	10	DI|0|10|#1f78b4|Unassigned
+ASV_46	10	TR|0|10|#33a02c|Serratia_marcescens_W2.3
+ASV_49	10	DI|0|10|#1f78b4|Unassigned
+ASV_48	10	DI|0|10|#1f78b4|Unassigned
+ASV_47	10	DI|0|10|#1f78b4|Unassigned
+ASV_879	10	DI|0|10|#1f78b4|Unassigned
+ASV_53	10	DI|0|10|#1f78b4|Unassigned
+ASV_51	10	DI|0|10|#1f78b4|Unassigned
+ASV_54	10	DI|0|10|#1f78b4|Unassigned
+ASV_52	10	DI|0|10|#1f78b4|Unassigned
+ASV_59	10	DI|0|10|#1f78b4|Unassigned
+ASV_57	10	DI|0|10|#1f78b4|Unassigned
+ASV_58	10	TR|0|10|#e31a1c|Streptococcus_sp._2011_Oral_MS_H4
+ASV_61	10	TL|0|10|#1f78b4|Morganella_morganii_subsp._sibonii
+ASV_744	10	DI|0|10|#1f78b4|Unassigned
+ASV_63	10	DI|0|10|#1f78b4|Unassigned
+ASV_67	10	DI|0|10|#1f78b4|Unassigned
+ASV_71	10	DI|0|10|#1f78b4|Unassigned
+ASV_70	10	DI|0|10|#1f78b4|Unassigned
+ASV_62	10	TL|0|10|#e31a1c|Pseudomonas_sp._BAB-3148
+ASV_69	10	DI|0|10|#1f78b4|Unassigned
+ASV_65	10	TR|0|10|#fb9a99|Stenotrophomonas_maltophilia
+ASV_68	10	RE|0|10|#b2df8a|Helicobacter_pylori
+ASV_74	10	DI|0|10|#1f78b4|Unassigned
+ASV_77	10	RE|0|10|#a6cee3|Dolosigranulum_pigrum_ATCC_51524
+ASV_93	10	DI|0|10|#1f78b4|Unassigned
+ASV_82	10	DI|0|10|#1f78b4|Unassigned
+ASV_80	10	DI|0|10|#b2df8a|Veillonella_atypica
+ASV_81	10	DI|0|10|#1f78b4|Unassigned

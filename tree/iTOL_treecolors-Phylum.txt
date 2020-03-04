@@ -1,0 +1,83 @@
+TREE_COLORS
+SEPARATOR TAB
+COLOR	#a6cee3
+DATASET_LABEL	Phylum
+LEGEND_COLORS	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99
+LEGEND_LABELS	Actinobacteria	Bacteroidetes	Firmicutes	Fusobacteria	Proteobacteria
+LEGEND_SHAPES	1	1	1	1	1
+LEGEND_TITLE	Phylum
+DATA
+ASV_1	range	#b2df8a	Firmicutes
+ASV_2	range	#b2df8a	Firmicutes
+ASV_3	range	#fb9a99	Proteobacteria
+ASV_4	range	#fb9a99	Proteobacteria
+ASV_5	range	#fb9a99	Proteobacteria
+ASV_8	range	#fb9a99	Proteobacteria
+ASV_10	range	#b2df8a	Firmicutes
+ASV_7	range	#1f78b4	Bacteroidetes
+ASV_6	range	#fb9a99	Proteobacteria
+ASV_9	range	#fb9a99	Proteobacteria
+ASV_11	range	#1f78b4	Bacteroidetes
+ASV_12	range	#1f78b4	Bacteroidetes
+ASV_13	range	#b2df8a	Firmicutes
+ASV_15	range	#b2df8a	Firmicutes
+ASV_14	range	#1f78b4	Bacteroidetes
+ASV_16	range	#1f78b4	Bacteroidetes
+ASV_17	range	#b2df8a	Firmicutes
+ASV_19	range	#b2df8a	Firmicutes
+ASV_18	range	#b2df8a	Firmicutes
+ASV_21	range	#1f78b4	Bacteroidetes
+ASV_20	range	#b2df8a	Firmicutes
+ASV_22	range	#fb9a99	Proteobacteria
+ASV_23	range	#33a02c	Fusobacteria
+ASV_24	range	#1f78b4	Bacteroidetes
+ASV_26	range	#b2df8a	Firmicutes
+ASV_25	range	#fb9a99	Proteobacteria
+ASV_27	range	#1f78b4	Bacteroidetes
+ASV_28	range	#fb9a99	Proteobacteria
+ASV_29	range	#33a02c	Fusobacteria
+ASV_30	range	#fb9a99	Proteobacteria
+ASV_32	range	#a6cee3	Actinobacteria
+ASV_36	range	#b2df8a	Firmicutes
+ASV_923	range	#b2df8a	Firmicutes
+ASV_33	range	#b2df8a	Firmicutes
+ASV_34	range	#a6cee3	Actinobacteria
+ASV_35	range	#b2df8a	Firmicutes
+ASV_38	range	#b2df8a	Firmicutes
+ASV_934	range	#b2df8a	Firmicutes
+ASV_37	range	#b2df8a	Firmicutes
+ASV_39	range	#fb9a99	Proteobacteria
+ASV_43	range	#1f78b4	Bacteroidetes
+ASV_40	range	#fb9a99	Proteobacteria
+ASV_42	range	#fb9a99	Proteobacteria
+ASV_50	range	#1f78b4	Bacteroidetes
+ASV_41	range	#1f78b4	Bacteroidetes
+ASV_44	range	#b2df8a	Firmicutes
+ASV_46	range	#fb9a99	Proteobacteria
+ASV_49	range	#1f78b4	Bacteroidetes
+ASV_48	range	#b2df8a	Firmicutes
+ASV_47	range	#b2df8a	Firmicutes
+ASV_879	range	#b2df8a	Firmicutes
+ASV_53	range	#fb9a99	Proteobacteria
+ASV_51	range	#1f78b4	Bacteroidetes
+ASV_54	range	#33a02c	Fusobacteria
+ASV_52	range	#b2df8a	Firmicutes
+ASV_59	range	#1f78b4	Bacteroidetes
+ASV_57	range	#1f78b4	Bacteroidetes
+ASV_58	range	#b2df8a	Firmicutes
+ASV_61	range	#fb9a99	Proteobacteria
+ASV_744	range	#fb9a99	Proteobacteria
+ASV_63	range	#1f78b4	Bacteroidetes
+ASV_67	range	#fb9a99	Proteobacteria
+ASV_71	range	#1f78b4	Bacteroidetes
+ASV_70	range	#33a02c	Fusobacteria
+ASV_62	range	#fb9a99	Proteobacteria
+ASV_69	range	#33a02c	Fusobacteria
+ASV_65	range	#fb9a99	Proteobacteria
+ASV_68	range	#fb9a99	Proteobacteria
+ASV_74	range	#33a02c	Fusobacteria
+ASV_77	range	#b2df8a	Firmicutes
+ASV_93	range	#1f78b4	Bacteroidetes
+ASV_82	range	#1f78b4	Bacteroidetes
+ASV_80	range	#b2df8a	Firmicutes
+ASV_81	range	#b2df8a	Firmicutes

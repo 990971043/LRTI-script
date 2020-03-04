@@ -1,0 +1,90 @@
+DATASET_DOMAINS
+SEPARATOR TAB
+BACKBONE_COLOR	#FFFFFF
+BACKBONE_HEIGHT	0
+BORDER_WIDTH	0
+COLOR	#bebada
+DATASET_LABEL	Family
+HEIGHT_FACTOR	1
+LEGEND_COLORS	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99	#a6cee3	#1f78b4	#b2df8a	#33a02c	#fb9a99
+LEGEND_LABELS	16d63.751	Bacillaceae	Carnobacteriaceae	Corynebacteriaceae	Enterobacteriaceae	Enterococcaceae	Family_XI	Flavobacteriaceae	Fusobacteriaceae	Helicobacteraceae	Lachnospiraceae	Leptotrichiaceae	Micrococcaceae	Moraxellaceae	Neisseriaceae	Pasteurellaceae	Peptostreptococcaceae	Porphyromonadaceae	Prevotellaceae	Pseudomonadaceae	Staphylococcaceae	Streptococcaceae	Unassigned	Veillonellaceae	Xanthomonadaceae
+LEGEND_SHAPES	EL	EL	EL	EL	EL	RE	RE	RE	RE	RE	TL	TL	TL	TL	TL	TR	TR	TR	TR	TR	DI	DI	DI	DI	DI
+LEGEND_TITLE	Family
+MARGIN	5
+SHOW_DOMAIN_LABELS	0
+WIDTH	25
+DATA
+ASV_1	10	EL|0|10|#1f78b4|Bacillaceae
+ASV_2	10	DI|0|10|#1f78b4|Streptococcaceae
+ASV_3	10	TR|0|10|#a6cee3|Pasteurellaceae
+ASV_4	10	TL|0|10|#fb9a99|Neisseriaceae
+ASV_5	10	EL|0|10|#fb9a99|Enterobacteriaceae
+ASV_8	10	TR|0|10|#a6cee3|Pasteurellaceae
+ASV_10	10	DI|0|10|#a6cee3|Staphylococcaceae
+ASV_7	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_6	10	TL|0|10|#33a02c|Moraxellaceae
+ASV_9	10	TL|0|10|#fb9a99|Neisseriaceae
+ASV_11	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_12	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_13	10	EL|0|10|#1f78b4|Bacillaceae
+ASV_15	10	EL|0|10|#b2df8a|Carnobacteriaceae
+ASV_14	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_16	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_17	10	DI|0|10|#1f78b4|Streptococcaceae
+ASV_19	10	EL|0|10|#1f78b4|Bacillaceae
+ASV_18	10	EL|0|10|#a6cee3|16d63.751
+ASV_21	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_20	10	EL|0|10|#b2df8a|Carnobacteriaceae
+ASV_22	10	TR|0|10|#a6cee3|Pasteurellaceae
+ASV_23	10	RE|0|10|#33a02c|Fusobacteriaceae
+ASV_24	10	RE|0|10|#b2df8a|Flavobacteriaceae
+ASV_26	10	DI|0|10|#1f78b4|Streptococcaceae
+ASV_25	10	TR|0|10|#fb9a99|Pseudomonadaceae
+ASV_27	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_28	10	TR|0|10|#a6cee3|Pasteurellaceae
+ASV_29	10	RE|0|10|#33a02c|Fusobacteriaceae
+ASV_30	10	TL|0|10|#33a02c|Moraxellaceae
+ASV_32	10	TL|0|10|#b2df8a|Micrococcaceae
+ASV_36	10	RE|0|10|#a6cee3|Enterococcaceae
+ASV_923	10	DI|0|10|#1f78b4|Streptococcaceae
+ASV_33	10	RE|0|10|#1f78b4|Family_XI
+ASV_34	10	EL|0|10|#33a02c|Corynebacteriaceae
+ASV_35	10	DI|0|10|#33a02c|Veillonellaceae
+ASV_38	10	TL|0|10|#a6cee3|Lachnospiraceae
+ASV_934	10	DI|0|10|#b2df8a|Unassigned
+ASV_37	10	RE|0|10|#1f78b4|Family_XI
+ASV_39	10	EL|0|10|#fb9a99|Enterobacteriaceae
+ASV_43	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_40	10	TR|0|10|#fb9a99|Pseudomonadaceae
+ASV_42	10	TR|0|10|#fb9a99|Pseudomonadaceae
+ASV_50	10	RE|0|10|#b2df8a|Flavobacteriaceae
+ASV_41	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_44	10	DI|0|10|#33a02c|Veillonellaceae
+ASV_46	10	EL|0|10|#fb9a99|Enterobacteriaceae
+ASV_49	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_48	10	DI|0|10|#33a02c|Veillonellaceae
+ASV_47	10	TR|0|10|#1f78b4|Peptostreptococcaceae
+ASV_879	10	DI|0|10|#1f78b4|Streptococcaceae
+ASV_53	10	TL|0|10|#fb9a99|Neisseriaceae
+ASV_51	10	RE|0|10|#b2df8a|Flavobacteriaceae
+ASV_54	10	TL|0|10|#1f78b4|Leptotrichiaceae
+ASV_52	10	DI|0|10|#33a02c|Veillonellaceae
+ASV_59	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_57	10	TR|0|10|#b2df8a|Porphyromonadaceae
+ASV_58	10	DI|0|10|#1f78b4|Streptococcaceae
+ASV_61	10	EL|0|10|#fb9a99|Enterobacteriaceae
+ASV_744	10	TR|0|10|#a6cee3|Pasteurellaceae
+ASV_63	10	RE|0|10|#b2df8a|Flavobacteriaceae
+ASV_67	10	TR|0|10|#a6cee3|Pasteurellaceae
+ASV_71	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_70	10	RE|0|10|#33a02c|Fusobacteriaceae
+ASV_62	10	DI|0|10|#fb9a99|Xanthomonadaceae
+ASV_69	10	RE|0|10|#33a02c|Fusobacteriaceae
+ASV_65	10	DI|0|10|#fb9a99|Xanthomonadaceae
+ASV_68	10	RE|0|10|#fb9a99|Helicobacteraceae
+ASV_74	10	RE|0|10|#33a02c|Fusobacteriaceae
+ASV_77	10	EL|0|10|#b2df8a|Carnobacteriaceae
+ASV_93	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_82	10	TR|0|10|#33a02c|Prevotellaceae
+ASV_80	10	DI|0|10|#33a02c|Veillonellaceae
+ASV_81	10	RE|0|10|#1f78b4|Family_XI

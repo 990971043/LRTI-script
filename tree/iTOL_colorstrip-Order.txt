@@ -1,0 +1,86 @@
+DATASET_COLORSTRIP
+SEPARATOR TAB
+BORDER_WIDTH	0
+COLOR	#bebada
+DATASET_LABEL	Order
+LEGEND_COLORS	#92d4ad	#6842c1	#6ecf58	#cb4ec2	#55733d	#4d4040	#c99447	#9083cb	#c9d14f	#4d2c63	#cea4a2	#d54f38	#71a6bd	#ca507f	#823f33
+LEGEND_LABELS	Bacillales	Bacteroidales	Campylobacterales	Clostridiales	Corynebacteriales	Enterobacteriales	Flavobacteriales	Fusobacteriales	Lactobacillales	Micrococcales	Neisseriales	Pasteurellales	Pseudomonadales	Selenomonadales	Xanthomonadales
+LEGEND_SHAPES	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+LEGEND_TITLE	Order
+MARGIN	5
+STRIP_WIDTH	25
+DATA
+ASV_1	#92d4ad	Bacillales
+ASV_2	#c9d14f	Lactobacillales
+ASV_3	#d54f38	Pasteurellales
+ASV_4	#cea4a2	Neisseriales
+ASV_5	#4d4040	Enterobacteriales
+ASV_8	#d54f38	Pasteurellales
+ASV_10	#92d4ad	Bacillales
+ASV_7	#6842c1	Bacteroidales
+ASV_6	#71a6bd	Pseudomonadales
+ASV_9	#cea4a2	Neisseriales
+ASV_11	#6842c1	Bacteroidales
+ASV_12	#6842c1	Bacteroidales
+ASV_13	#92d4ad	Bacillales
+ASV_15	#c9d14f	Lactobacillales
+ASV_14	#6842c1	Bacteroidales
+ASV_16	#6842c1	Bacteroidales
+ASV_17	#c9d14f	Lactobacillales
+ASV_19	#92d4ad	Bacillales
+ASV_18	#c9d14f	Lactobacillales
+ASV_21	#6842c1	Bacteroidales
+ASV_20	#c9d14f	Lactobacillales
+ASV_22	#d54f38	Pasteurellales
+ASV_23	#9083cb	Fusobacteriales
+ASV_24	#c99447	Flavobacteriales
+ASV_26	#c9d14f	Lactobacillales
+ASV_25	#71a6bd	Pseudomonadales
+ASV_27	#6842c1	Bacteroidales
+ASV_28	#d54f38	Pasteurellales
+ASV_29	#9083cb	Fusobacteriales
+ASV_30	#71a6bd	Pseudomonadales
+ASV_32	#4d2c63	Micrococcales
+ASV_36	#c9d14f	Lactobacillales
+ASV_923	#c9d14f	Lactobacillales
+ASV_33	#cb4ec2	Clostridiales
+ASV_34	#55733d	Corynebacteriales
+ASV_35	#ca507f	Selenomonadales
+ASV_38	#cb4ec2	Clostridiales
+ASV_934	#92d4ad	Bacillales
+ASV_37	#92d4ad	Bacillales
+ASV_39	#4d4040	Enterobacteriales
+ASV_43	#6842c1	Bacteroidales
+ASV_40	#71a6bd	Pseudomonadales
+ASV_42	#71a6bd	Pseudomonadales
+ASV_50	#c99447	Flavobacteriales
+ASV_41	#6842c1	Bacteroidales
+ASV_44	#ca507f	Selenomonadales
+ASV_46	#4d4040	Enterobacteriales
+ASV_49	#6842c1	Bacteroidales
+ASV_48	#ca507f	Selenomonadales
+ASV_47	#cb4ec2	Clostridiales
+ASV_879	#c9d14f	Lactobacillales
+ASV_53	#cea4a2	Neisseriales
+ASV_51	#c99447	Flavobacteriales
+ASV_54	#9083cb	Fusobacteriales
+ASV_52	#ca507f	Selenomonadales
+ASV_59	#6842c1	Bacteroidales
+ASV_57	#6842c1	Bacteroidales
+ASV_58	#c9d14f	Lactobacillales
+ASV_61	#4d4040	Enterobacteriales
+ASV_744	#d54f38	Pasteurellales
+ASV_63	#c99447	Flavobacteriales
+ASV_67	#d54f38	Pasteurellales
+ASV_71	#6842c1	Bacteroidales
+ASV_70	#9083cb	Fusobacteriales
+ASV_62	#823f33	Xanthomonadales
+ASV_69	#9083cb	Fusobacteriales
+ASV_65	#823f33	Xanthomonadales
+ASV_68	#6ecf58	Campylobacterales
+ASV_74	#9083cb	Fusobacteriales
+ASV_77	#c9d14f	Lactobacillales
+ASV_93	#6842c1	Bacteroidales
+ASV_82	#6842c1	Bacteroidales
+ASV_80	#ca507f	Selenomonadales
+ASV_81	#cb4ec2	Clostridiales
