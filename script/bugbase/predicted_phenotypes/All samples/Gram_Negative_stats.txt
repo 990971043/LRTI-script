@@ -1,0 +1,41 @@
+
+
+Gram_Negative
+Number of samples in each treatment group:
+
+ ASP    G    N NASP   OC   OP 
+   4    5   13    8   12   13 
+
+Proportion with phenotype (mean):
+      ASP         G         N      NASP        OC        OP 
+0.6552086 0.9203244 0.4342595 0.3922961 0.8231111 0.7478606 
+
+Proportion with phenotype (median):
+      ASP         G         N      NASP        OC        OP 
+0.7767992 0.9290569 0.4078855 0.1433519 0.9046414 0.7902231 
+
+Standard deviation:
+       ASP          G          N       NASP         OC         OP 
+0.35974853 0.05859175 0.30713063 0.37150253 0.24113149 0.21200511 
+
+Pairwise Mann-Whitney-Wilcoxon Tests were performed.
+Pairwise p-values are:
+   ASP_vs_G    ASP_vs_N ASP_vs_NASP   ASP_vs_OC   ASP_vs_OP      G_vs_N 
+  0.1111111   0.2453782   0.2828283   0.2615385   0.7848739   0.0028011 
+  G_vs_NASP     G_vs_OC     G_vs_OP   N_vs_NASP     N_vs_OC     N_vs_OP 
+  0.0295260   0.6460892   0.0459851   0.9155339   0.0019445   0.0072438 
+ NASP_vs_OC  NASP_vs_OP    OC_vs_OP 
+  0.0095578   0.0368175   0.1095483 
+
+FDR-corrected pairwise p-values are:
+   ASP_vs_G    ASP_vs_N ASP_vs_NASP   ASP_vs_OC   ASP_vs_OP      G_vs_N 
+ 0.18518519  0.35353535  0.35353535  0.35353535  0.84093637  0.02100840 
+  G_vs_NASP     G_vs_OC     G_vs_OP   N_vs_NASP     N_vs_OC     N_vs_OP 
+ 0.08857809  0.74548754  0.09853942  0.91553393  0.02100840  0.03584187 
+ NASP_vs_OC  NASP_vs_OP    OC_vs_OP 
+ 0.03584187  0.09204384  0.18518519 
+
+Kruskal-Wallis Test was performed.
+
+Group p-value is:
+0.001511225 

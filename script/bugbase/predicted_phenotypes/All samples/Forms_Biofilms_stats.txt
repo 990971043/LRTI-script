@@ -1,0 +1,41 @@
+
+
+Forms_Biofilms
+Number of samples in each treatment group:
+
+ ASP    G    N NASP   OC   OP 
+   4    5   13    8   12   13 
+
+Proportion with phenotype (mean):
+      ASP         G         N      NASP        OC        OP 
+0.5234456 0.6283798 0.3764240 0.2874958 0.5794341 0.3915782 
+
+Proportion with phenotype (median):
+      ASP         G         N      NASP        OC        OP 
+0.5988226 0.6178483 0.2736053 0.1745865 0.5965195 0.3958969 
+
+Standard deviation:
+      ASP         G         N      NASP        OC        OP 
+0.2425653 0.1502836 0.2758205 0.2470494 0.2126746 0.1807208 
+
+Pairwise Mann-Whitney-Wilcoxon Tests were performed.
+Pairwise p-values are:
+   ASP_vs_G    ASP_vs_N ASP_vs_NASP   ASP_vs_OC   ASP_vs_OP      G_vs_N 
+   0.904762    0.350420    0.214141    0.770330    0.245378    0.059290 
+  G_vs_NASP     G_vs_OC     G_vs_OP   N_vs_NASP     N_vs_OC     N_vs_OP 
+   0.029526    0.798966    0.045985    0.336272    0.045711    0.511438 
+ NASP_vs_OC  NASP_vs_OP    OC_vs_OP 
+   0.020132    0.089046    0.025666 
+
+FDR-corrected pairwise p-values are:
+   ASP_vs_G    ASP_vs_N ASP_vs_NASP   ASP_vs_OC   ASP_vs_OP      G_vs_N 
+  0.9047619   0.4778457   0.4015152   0.8560347   0.4089636   0.1482260 
+  G_vs_NASP     G_vs_OC     G_vs_OP   N_vs_NASP     N_vs_OC     N_vs_OP 
+  0.1379552   0.8560347   0.1379552   0.4778457   0.1379552   0.6392977 
+ NASP_vs_OC  NASP_vs_OP    OC_vs_OP 
+  0.1379552   0.1908132   0.1379552 
+
+Kruskal-Wallis Test was performed.
+
+Group p-value is:
+0.02607756 

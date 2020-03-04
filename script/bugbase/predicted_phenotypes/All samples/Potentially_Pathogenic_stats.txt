@@ -1,0 +1,41 @@
+
+
+Potentially_Pathogenic
+Number of samples in each treatment group:
+
+ ASP    G    N NASP   OC   OP 
+   4    5   13    8   12   13 
+
+Proportion with phenotype (mean):
+      ASP         G         N      NASP        OC        OP 
+0.4997562 0.6136938 0.3012289 0.2550264 0.5632756 0.3700792 
+
+Proportion with phenotype (median):
+      ASP         G         N      NASP        OC        OP 
+0.5758630 0.6046920 0.1865030 0.1332411 0.5870935 0.3829429 
+
+Standard deviation:
+      ASP         G         N      NASP        OC        OP 
+0.2523817 0.1621607 0.2765928 0.2587373 0.2233311 0.1864891 
+
+Pairwise Mann-Whitney-Wilcoxon Tests were performed.
+Pairwise p-values are:
+   ASP_vs_G    ASP_vs_N ASP_vs_NASP   ASP_vs_OC   ASP_vs_OP      G_vs_N 
+   0.730159    0.245378    0.109091    0.861538    0.350420    0.026377 
+  G_vs_NASP     G_vs_OC     G_vs_OP   N_vs_NASP     N_vs_OC     N_vs_OP 
+   0.029526    0.798966    0.035014    0.595066    0.015972    0.185689 
+ NASP_vs_OC  NASP_vs_OP    OC_vs_OP 
+   0.015861    0.089046    0.025666 
+
+FDR-corrected pairwise p-values are:
+   ASP_vs_G    ASP_vs_N ASP_vs_NASP   ASP_vs_OC   ASP_vs_OP      G_vs_N 
+ 0.84249084  0.36806723  0.20454545  0.86153846  0.47784568  0.08753501 
+  G_vs_NASP     G_vs_OC     G_vs_OP   N_vs_NASP     N_vs_OC     N_vs_OP 
+ 0.08753501  0.85603472  0.08753501  0.74383262  0.08753501  0.30948086 
+ NASP_vs_OC  NASP_vs_OP    OC_vs_OP 
+ 0.08753501  0.19081317  0.08753501 
+
+Kruskal-Wallis Test was performed.
+
+Group p-value is:
+0.01120766 

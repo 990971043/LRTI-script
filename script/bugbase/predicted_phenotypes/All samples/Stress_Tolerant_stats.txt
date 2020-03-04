@@ -1,0 +1,41 @@
+
+
+Stress_Tolerant
+Number of samples in each treatment group:
+
+ ASP    G    N NASP   OC   OP 
+   4    5   13    8   12   13 
+
+Proportion with phenotype (mean):
+      ASP         G         N      NASP        OC        OP 
+0.4882812 0.6135867 0.3002563 0.2531618 0.5630535 0.3699177 
+
+Proportion with phenotype (median):
+      ASP         G         N      NASP        OC        OP 
+0.5539517 0.6045195 0.1865030 0.1299861 0.5870935 0.3829429 
+
+Standard deviation:
+      ASP         G         N      NASP        OC        OP 
+0.2526449 0.1620828 0.2770330 0.2599312 0.2237276 0.1866827 
+
+Pairwise Mann-Whitney-Wilcoxon Tests were performed.
+Pairwise p-values are:
+   ASP_vs_G    ASP_vs_N ASP_vs_NASP   ASP_vs_OC   ASP_vs_OP      G_vs_N 
+   0.730159    0.245378    0.109091    0.770330    0.350420    0.026377 
+  G_vs_NASP     G_vs_OC     G_vs_OP   N_vs_NASP     N_vs_OC     N_vs_OP 
+   0.029526    0.798966    0.035014    0.595066    0.015972    0.185689 
+ NASP_vs_OC  NASP_vs_OP    OC_vs_OP 
+   0.015861    0.089046    0.025666 
+
+FDR-corrected pairwise p-values are:
+   ASP_vs_G    ASP_vs_N ASP_vs_NASP   ASP_vs_OC   ASP_vs_OP      G_vs_N 
+ 0.79896574  0.36806723  0.20454545  0.79896574  0.47784568  0.08753501 
+  G_vs_NASP     G_vs_OC     G_vs_OP   N_vs_NASP     N_vs_OC     N_vs_OP 
+ 0.08753501  0.79896574  0.08753501  0.74383262  0.08753501  0.30948086 
+ NASP_vs_OC  NASP_vs_OP    OC_vs_OP 
+ 0.08753501  0.19081317  0.08753501 
+
+Kruskal-Wallis Test was performed.
+
+Group p-value is:
+0.01109149 
