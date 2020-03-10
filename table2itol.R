@@ -1,31 +1,4 @@
-#!/conda2/bin/Rscript --vanilla
 
-
-################################################################################
-#
-# table2itol.R -- Rscript script for generating input files for iTOL.
-#
-# (C) since 2016 by Markus Goeker (markus [DOT] goeker [AT] dsmz [DOT] de)
-#
-# This script is distributed under the terms of the GNU General Public License.
-# See http://www.gnu.org/licenses/gpl.html for further information.
-#
-# table2itol.R is distributed in the hope that it will be useful, but WITHOUT
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-#
-# You must install R (https://cran.r-project.org/) and for non-interactive use
-# also optparse (https://cran.r-project.org/package=optparse) to run this
-# script. Several other R packages are needed for special purposes. See the
-# README for details.
-#
-# This script was written for the command line but can also be used in
-# interactive mode. See the README for details.
-#
-################################################################################
-
-
-# Option processing
 #
 if (!interactive() || length(find.package("optparse", NULL, TRUE))) {
 
