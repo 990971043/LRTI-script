@@ -1,118 +1,8 @@
 #!/usr/bin/env Rscript
 
-# Copyright 2016-2020 Yong-Xin Liu <metagenome@126.com>
-
-# If used this script, please cited:
-# Jingying Zhang, Yong-Xin Liu, Na Zhang, Bin Hu, Tao Jin, Haoran Xu, Yuan Qin, Pengxu Yan, Xiaoning Zhang, Xiaoxuan Guo, Jing Hui, Shouyun Cao, Xin Wang, Chao Wang, Hui Wang, Baoyuan Qu, Guangyi Fan, Lixing Yuan, Ruben Garrido-Oter, Chengcai Chu & Yang Bai. NRT1.1B is associated with root microbiota composition and nitrogen use in field-grown rice. Nature Biotechnology 37, 676-684, doi:10.1038/s41587-019-0104-4 (2019).
-
-# 手动运行脚本请，需要设置工作目录，使用 Ctrl+Shift+H 或 Session - Set Work Directory - Choose Directory / To Source File Location 设置工作目录
-
-# 1.1 程序功能描述和主要步骤
-
-# 程序功能：基于OTU表、物种注释和实验设计差异比较：可选edgeR, wilcoxon, ttest
-# Functions: Dfferentially abundance test
-# Main steps:
-# - Reads data table otutab.txt, taxonomy.txt and metadata.tsv
-# - Output Dfferentially abundance OTU table, volcano, manhattan and heatmap
 
 options(warn = -1) # Turn off warning
-
-
-## 设置输入输出文件和参数
-
-# 修改下面`default=`后面的文件和参数。
-#
-# 输入文件为原始OTU表(otutab.txt)+物种注释(taxonomy.txt)+分组信息(metadata.tsv)
-#
-# 输入文件"-i", "--input"，OTU table in counts; 原始OTU表counts值；
-#
-# 实验设计"-d", "--design"，默认`metadata.tsv`，可手动修改文件位置；
-#
-# 物种注释"-t", "--taxonomy"，Taxonomy file; 物种注释
-#
-# 分组列名"-n", "--group"，默认将metadata.tsv中的group列作为分组信息，可修改为任意列名；
-#
-# 输入文件前缀"-o", "--output"，默认为空时，输出为当前目录前缀为KO-WT_all/sig.txt统计表格，A-B_volcano/manhattan/heatmap.pdf组比较图片。
-#
-# 物种图例顺序"-T", "--topNtax"，Top 10 phylum; 自定义门图例
-#
-# 比较组"-c", "--compare"，Groups comparison; 组间比较，默认为KO-WT
-#
-# Pvalue阈值"-p", "--pvalue"，Threshold of P-value, 显著性阈值
-#
-# 假阳性率阈值"-f", "--fdr"，Threshold of FDR, 假阳性率阈值
-#
-# 图片宽"-w", "--width"，默认8英寸，根据图像布局可适当增大或缩小
-#
-# 图片高"-e", "--height"，默认5英寸，根据图像布局可适当增大或缩小
-
-
-# 1.2 解析命令行
-# 设置清华源加速下载
-site="https://mirrors.tuna.tsinghua.edu.cn/CRAN"
-# 判断命令行解析是否安装，安装并加载
-if (!suppressWarnings(suppressMessages(require("optparse", character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)))) {
-  install.packages(p, repos=site)
-  require("optparse",character.only=T)
-}
-# 解析参数-h显示帮助信息
-if (TRUE){
-  option_list = list(
-    make_option(c("-i", "--input"), type="character", default="result/otutab.txt",
-                help="OTU/ASV table in reads count [default %default]"),
-    make_option(c("-d", "--design"), type="character", default="metadata.tsv",
-                help="Design file or metadata [default %default]"),
-    make_option(c("-t", "--taxonomy"), type="character", default="result/taxonomy.txt",
-                help="Taxonomy file [default %default]"),
-    make_option(c("-T", "--topNtax"), type="character", default="tax/tax_phylum.top",
-                help="Top 10 phylum [default %default]"),
-    make_option(c("-n", "--group"), type="character", default="Group",
-                help="Group name [default %default]"),
-    make_option(c("-c", "--compare"), type="character", default="KO-OE",
-                help="Groups comparison [default %default]"),
-    make_option(c("-p", "--pvalue"), type="numeric", default=0.05,
-                help="Threshold of P-value [default %default]"),
-    make_option(c("-f", "--fdr"), type="numeric", default=0.1,
-                help="Threshold of FDR [default %default]"),
-    make_option(c("-o", "--output"), type="character", default="compare/",
-                help="Output directory; name according to compare and  output.txt and .pdf [default %default]"),
-    make_option(c("-w", "--width"), type="numeric", default=8,
-                help="Figure width [default %default]"),
-    make_option(c("-e", "--height"), type="numeric", default=5,
-                help="Figure heidth [default %default]")
-  )
-  opts = parse_args(OptionParser(option_list=option_list))
-
-  suppressWarnings(dir.create(opts$output))
-  output_dir = opts$output
-
-  # 调置如果无调设置输出，根据其它参数设置默认输出
-  opts$output=paste(opts$output,opts$compare, sep = "")
-
-  # 显示输入输出参数，用户确认是否正确
-  print("Parameters are as follows. Please check it!")
-  print(paste("The input data matrix file is ", opts$input,  sep = ""))
-  print(paste("The design file is ", opts$design,  sep = ""))
-  print(paste("The taxonomy file is ", opts$taxonomy,  sep = ""))
-  print(paste("Top 10 phylum file is ", opts$topNtax,  sep = ""))
-  print(paste("Group name is ", opts$group,  sep = ""))
-  print(paste("Group compare is ", opts$compare,  sep = ""))
-  print(paste("Threshold of P-value is ", opts$pvalue,  sep = ""))
-  print(paste("Threshold of FDR is ", opts$fdr,  sep = ""))
-  print(paste("Output figure width ", opts$width,  sep = ""))
-  print(paste("Output figure height ", opts$height,  sep = ""))
-  print(paste("The output file is ", opts$output, "*.pdf/txt", sep = ""))
-  print("",quote = F)
-}
-
-
-
-# 2. 依赖关系检查、安装和加载
-
-# 2.1 安装CRAN来源常用包
-# 依赖包列表：差异分析、绘图、热图、数据变换和开发者工具
 package_list = c("ggplot2","pheatmap","dplyr","devtools")
-# 判断R包加载是否成功来决定是否安装后再加载
 for(p in package_list){
   if(!suppressWarnings(suppressMessages(require(p, character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)))){
     install.packages(p, repos=site)
@@ -120,8 +10,7 @@ for(p in package_list){
   }
 }
 
-# 2.2 安装bioconductor常用包
-# 基于reads counts值组间差异分析包
+
 package_list = c("limma","edgeR")
 for(p in package_list){
   if(!suppressWarnings(suppressMessages(require(p, character.only = TRUE, quietly = TRUE, warn.conflicts = FALSE)))){
@@ -131,25 +20,15 @@ for(p in package_list){
   }
 }
 
-
-# 3. 读取输入文件
-
-# 读取OTU表
 dat = read.table(opts$input, header=T, row.names= 1, sep="\t", comment.char = "")
 
-# 读取实验设计
 design = read.table(opts$design, header=T, row.names= 1, sep="\t", comment.char = "")
 
-# 将选定的分组列统一命名为group
 design$group=design[,opts$group]
 
-
-
-# 4. 统计
-
-# edgeR函数
+# edgeR
 run_edgeR = function(dat,design,compare){
-  # 筛选比较组
+
   group_list=strsplit(opts$compare,'-')[[1]]
   idx = design$group %in% group_list
   sub_design=design[idx,]
@@ -179,13 +58,12 @@ run_edgeR = function(dat,design,compare){
   nrDAO$level = ifelse(nrDAO$logFC>0 & nrDAO$PValue<opts$pvalue & nrDAO$FDR < opts$fdr, "Enriched",ifelse(nrDAO$logFC<0 & nrDAO$PValue<opts$pvalue & nrDAO$FDR < opts$fdr, "Depleted","NotSig"))
   nrDAO$level=factor(nrDAO$level,levels = c("Enriched","Depleted","NotSig"))
 
-  # 如果存在物种注释，添加注释信息
+ 
   if (file.exists(opts$taxonomy)){
   tax = read.table(opts$taxonomy, header=T, row.names= 1, sep="\t", comment.char = "")
   tax = tax[rownames(nrDAO),]
   nrDAO=cbind(nrDAO,tax)
 
-  # Draw manhattan plot and color by phylum
   x=nrDAO
   x$otu=rownames(x)
   x$neglogp=-log10(x$PValue)
@@ -193,8 +71,7 @@ run_edgeR = function(dat,design,compare){
   x = arrange(x, Phylum, Class, Order, Family, Genus,otu)
   rownames(x) = x$otu
 
-  # Taxonomy top N, other in low abundance
-  # 无指定文件，使用四大菌门
+
   x$tax=gsub("p__","",x$Phylum)
   if (file.exists(opts$topN)){
     topN = read.table(opts$topNtax)
@@ -252,10 +129,10 @@ run_edgeR = function(dat,design,compare){
   write.table("OTUID\t", file=paste(opts$output,"_all.txt",sep=""),append = F, quote = F, eol = "", row.names = F, col.names = F)
   write.table(output,file=paste0(opts$output,"_all.txt",sep=""),append = T,quote = F,sep = '\t',row.names = T)
 
-  # 计算上、下调OTUs数量
+ 
   NoE= dim(output[output$level=="Enriched",])[1]
   NoD= dim(output[output$level=="Depleted",])[1]
-  # 绘制火山图，
+
   p = ggplot(output, aes(x=logFC, y=logCPM, color=level)) +
     geom_point() + xlim(-4, 4) + theme_classic()+
     scale_colour_manual(values=c("red","green","grey")) +
@@ -267,15 +144,15 @@ run_edgeR = function(dat,design,compare){
   ggsave(paste(opts$output, "_volcano.pdf", sep=""), p,
          width = opts$width, height = opts$height)
 
-  # 数据筛选，pvalue < 0.05，FDR < 0.2
+  
   output=output[output$PValue < opts$pvalue,]
   output=output[output$FDR < opts$fdr,]
-  # 保存筛选结果于sig.txt结尾文件中
+
   write.table("OTUID\t", file=paste(opts$output,"_sig.txt",sep=""),append = F, quote = F, eol = "", row.names = F, col.names = F)
   write.table(output,file=paste0(opts$output,"_sig.txt",sep=""),append = T,quote = F,sep = '\t',row.names = T)
 
 
-# 保存三元图enriched结果
+
   g=group_list
     write.table("OTUID\t", file=paste0(output_dir, g[1], "vs", g[2],"_enriched.txt"),append = F, quote = F, eol = "", row.names = F, col.names = F)
   write.table(output[output$level == "Enriched",],file=paste0(output_dir, g[1], "vs", g[2],"_enriched.txt"),append = T,quote = F,sep = '\t',row.names = T)
@@ -284,17 +161,14 @@ run_edgeR = function(dat,design,compare){
   write.table(output[output$level == "Depleted",],file=paste0(output_dir, g[2], "vs", g[1],"_enriched.txt"),append = T,quote = F,sep = '\t',row.names = T)
 
   if (file.exists(opts$taxonomy)){
-  # 绘差异OTUs有分组、物种门的热图pheatmap
 
-  # 制作注释行变化类型和分类学门水平的数据框
   anno_row=data.frame(Level = output$level,
                             Taxonomy=output$Phylum,
                             row.names = rownames(output))
-  # 制作注释列分组信息
+
   anno_col=data.frame(Group = sub_design$group,
                       row.names = rownames(sub_design))
 
-  # 绘制热图
   pheatmap(norm[rownames(output),],
            scale = "row",
            cutree_rows=2,cutree_cols = 2,
@@ -308,9 +182,9 @@ run_edgeR = function(dat,design,compare){
 }
 }
 
-# edgeR计算组间差异
+
 run_edgeR(dat,design,opts$compare)
 
-# 提示工作完成
+
 print(paste("Output in files in ", opts$output,"*.txt/pdf. All works done!!!", sep = ""))
 print("",quote = F)
